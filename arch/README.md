@@ -10,23 +10,23 @@ To ensure that fuzzel works correctly, place the scripts folder into `~/code/` o
 
 
 <u>official packages</u>
-**window manager** : [hyprland](https://archlinux.org/packages/extra/x86_64/hyprland/
-**session manager** : [uwsm](https://archlinux.org/packages/extra/any/uwsm/)
-**terminal** : [ghostty](https://archlinux.org/packages/extra/x86_64/ghostty/)
-**fuzzy finder / launcher** : [fuzzel](https://archlinux.org/packages/extra/x86_64/fuzzel/)
-**screenshot** : [slurp](https://archlinux.org/packages/extra/x86_64/slurp/) (screenshot) + [swappy](https://archlinux.org/packages/extra/x86_64/swappy/) (screenshot editting / saving)
-**browser** : [firefox](https://archlinux.org/packages/extra/x86_64/firefox/)
-**note taking** : [obsidian](https://archlinux.org/packages/extra/x86_64/obsidian/)
-**file browser** : [yazi](https://archlinux.org/packages/extra/x86_64/yazi/)
-**media player** : [vlc](https://archlinux.org/packages/extra/x86_64/vlc/)
-**image viewer** : [imv](https://archlinux.org/packages/extra/x86_64/imv/) (set mimetypes to handle with `xdg-mime default imv.desktop image/png image/jpeg image/gif`)
-**IDE** : [code](https://archlinux.org/packages/extra/x86_64/code/) / [neovim](https://archlinux.org/packages/extra/x86_64/neovim/)
-**TUI art** : [arttime](https://github.com/poetaman/arttime) (displays custom boot up image in terminal)
+- **window manager** : [hyprland](https://archlinux.org/packages/extra/x86_64/hyprland/
+- **session manager** : [uwsm](https://archlinux.org/packages/extra/any/uwsm/)
+- **terminal** : [ghostty](https://archlinux.org/packages/extra/x86_64/ghostty/)
+- **fuzzy finder / launcher** : [fuzzel](https://archlinux.org/packages/extra/x86_64/fuzzel/)
+- **screenshot** : [slurp](https://archlinux.org/packages/extra/x86_64/slurp/) (screenshot) + [swappy](https://archlinux.org/packages/extra/x86_64/swappy/) (screenshot editting / saving)
+- **browser** : [firefox](https://archlinux.org/packages/extra/x86_64/firefox/)
+- **note taking** : [obsidian](https://archlinux.org/packages/extra/x86_64/obsidian/)
+- **file browser** : [yazi](https://archlinux.org/packages/extra/x86_64/yazi/)
+- **media player** : [vlc](https://archlinux.org/packages/extra/x86_64/vlc/)
+- **image viewer** : [imv](https://archlinux.org/packages/extra/x86_64/imv/) (set mimetypes to handle with `xdg-mime default imv.desktop image/png image/jpeg image/gif`)
+- **IDE** : [code](https://archlinux.org/packages/extra/x86_64/code/) / [neovim](https://archlinux.org/packages/extra/x86_64/neovim/)
+- **TUI art** : [arttime](https://github.com/poetaman/arttime) (displays custom boot up image in terminal)
 
 
 <u>AUR packages</u>
-**status bar / wallpaper** : [noctalia](https://github.com/noctalia-dev/noctalia)
-**music player** : [subtui](https://github.com/MattiaPun/SubTUI) *(requires a subsonic server)*
+- **status bar / wallpaper** : [noctalia](https://github.com/noctalia-dev/noctalia)
+- **music player** : [subtui](https://github.com/MattiaPun/SubTUI) *(requires a subsonic server)*
 
 ### required
 
@@ -40,11 +40,15 @@ To ensure that fuzzel works correctly, place the scripts folder into `~/code/` o
 - polkit-agent (managed through noctalia's official polkit agent plugin)
 - bemoji (if you want the emoji picker functionality to work with fuzzel)
 
+\---
+
 While a specific font is not needed, a NerdFont in general should be downloaded from [here](https://www.nerdfonts.com/font-downloads). I have a specific preference towards [CommitMono Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CommitMono.zip). In case you prefer another NerdFont, make sure to replace these variables in the following .config files:
 - `font` property in `.config/fuzzel/fuzzel.ini`
 - `font-family` property in `.config/ghostty/config.ghostty`
 
-### configs explained
+---
+
+## configs explained
 
 *the configs are explained in alphabetical order as they appear in the `/.config/` directory.*
 
@@ -91,7 +95,7 @@ While a specific font is not needed, a NerdFont in general should be downloaded 
                 - Volume : can be clicked to alter volume controls through noctalia's UI.
                 - Microphone : shows whether microphone is muted. Clicking it opens the same menu as the volume widget.
                 - Brightness : can be clicked to alter screen brightness through noctalia's UI.
-                - Control Center : Allows access to noctalia settings, network settings, bluetooth settings, airplane mode, and wallpaper settings.
+                - Control Center : allows access to noctalia settings, network settings, bluetooth settings, airplane mode, and wallpaper settings.
 
 - `/swappy/config` : sets the specific directory where / how screenshots taken with slurp should be saved.
 
