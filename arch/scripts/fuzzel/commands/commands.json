@@ -1,0 +1,10 @@
+{
+	"power off": "poweroff",
+	"reboot": "systemctl reboot",
+	"log out": "hyprctl dispatch exit",
+	"sleep": "systemctl suspend",
+	"open app dir": "ghostty --working-directory=/usr/share/applications",
+	"edit hyprland": "ghostty -e nvim ~/.config/hypr/hyprland.conf",
+	"edit commands": "ghostty -e nvim ~/code/scripts/fuzzel/commands/commands.json",
+	"edit custom apps": "~/code/scripts/fuzzel/commands/open_custom_apps.sh"
+}

@@ -31,7 +31,7 @@ case $new_choice in
 		# Opens custom commands menu
 		# Commands are declared in the commands.json
 		# (located in ~/.config/fuzzle/
-		open_command="~/.local/share/scripts/fuzzel_run_commands.sh"
+		open_command="~/code/scripts/fuzzel/fuzzel_run_commands.sh"
 	;;
 esac
 

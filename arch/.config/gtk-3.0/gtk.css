@@ -1,0 +1,33 @@
+window {
+	background: #292827;
+}
+
+window headerbar {
+	background: #20201e;
+	border-bottom: 1px solid #313131;
+	box-shadow: none;
+	background-image: none;
+}
+
+window headerbar button {
+	background: #DADADA;
+	color: #20201e;
+	box-shadow: none;
+	border: none;
+}
+
+window headerbar button:hover {
+	background-color: #F5C35A;
+	background-image: none;
+	-gtk-icon-shadow: none;  /* Avoid white shadow under icon */
+}
+
+window headerbar button:active {
+	background-color: #967736;
+	color: #292827;
+}
+
+window headerbar button:disabled {
+	background-color: #B3B3B3;
+	opacity: 0.5;
+}

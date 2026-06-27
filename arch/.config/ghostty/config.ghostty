@@ -1,0 +1,11 @@
+font-family = "CommitMono Nerd Font Mono"
+
+# Customize palette 3's shade of yellow to be my preferred shade
+# Note:
+# In ~/.bashrc add PS1="\[\e[33m\]\w\[\e[0m\] \$ "
+# So that the custom yellow gets applied to current path text!
+palette = 3 = #ecc279
+
+background = #20201e
+cursor-color = #ecc279
+selection-background = #ecc279

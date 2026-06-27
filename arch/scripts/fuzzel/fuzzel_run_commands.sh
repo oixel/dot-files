@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Stores path to list of commands
-commands="/home/oixel/.config/fuzzel/commands.json"
+commands="/home/user/code/scripts/fuzzel/commands/commands.json"
 
 # Extract the keys from the commands.json and pip them into a fuzzel dmenu
 # Then, take the selected command and store it into a variable
