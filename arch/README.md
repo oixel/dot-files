@@ -105,57 +105,12 @@ While a specific font is not needed, a NerdFont in general should be downloaded 
 
 One of the first things I customized was the default Linux terminal to ensure it upheld my custom theme while also making the font more legibile.
 
-These are the steps I followed to do so:
+These are the steps to do so:
 
-1. Downloading custom terminal font using [this](https://gist.github.com/AskinNet/10c8e131bf371dd5eab68e791040c995).
-2. Downloaded the [forked version of tuigreet](https://github.com/NotAShelf/tuigreet) to allow for more control
-3. Customized it in `/etc/tuigreet/config.toml`:
-
-```toml
-[display]
-show_time = true
-time_format = "%m.%d.%Y - %H:%M"
-greeting = "Welcome aboard the shipbird!"
-
-[layout]
-width = 50
-window_padding = 2
-container_padding = 1
-prompt_padding = 1
-
-[layout.widgets]
-time_position = "top"
-
-[secret]
-mode = "characters"
-characters = "*"
-
-[theme]
-# Gets converted to linux terminal-allowed colors
-text = "white"
-time = "white"
-container = "black"
-border = "yellow"
-greet = "white"
-prompt = "yellow"
-input = "white"
-action = "white"
-button = "yellow"
-```
-
-4. Then customized the terminal's color scheme by creating a custom script in `/etc/tuigreet/set-color.sh` to override the colors upon booting:
-
-```sh
-#!/bin/bash
-printf '\033]P020201e' > /dev/tty1 || true  # Custom black
-printf '\033]P3F5C35A' > /dev/tty1 || true  # Custom yellow
-printf '\033]P7DADADA' > /dev/tty1 || true  # Custom white
-printf '\033[2J\033[H' > /dev/tty1 || true  # Clear to reset colors
-exit 0
-```
-
-5. Then I used `chmod` to make the bash script an executable.
-6. Forced the greetd service to call the custom color override on startup so that it can run with elevated priviledges:
+1. Download a custom terminal font from [here](https://gist.github.com/AskinNet/10c8e131bf371dd5eab68e791040c995).
+2. Download the [forked version of tuigreet](https://github.com/NotAShelf/tuigreet) to allow for more control via a config file.
+3. Place the files in `/etc/tuigreet/` into your tuigreet directory.
+4. Force the greetd service to call the custom color override on startup so that it can run with elevated priviledges:
 
 ```
 sudo mkdir -p /etc/systemd/system/greetd.service.d
@@ -166,7 +121,7 @@ EOF
 sudo systemctl daemon-reload
 ```
 
-7. Then reset greetd to apply the color changes:
+5. Then reset greetd to apply the color changes:
 
 ```
 sudo systemctl reset-failed greetd.service && sudo systemctl start greetd.service

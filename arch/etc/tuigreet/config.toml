@@ -1,0 +1,29 @@
+[display]
+show_time = true
+time_format = "%m.%d.%Y - %H:%M"
+greeting = "Welcome aboard the shipbird!"
+
+[layout]
+width = 50
+window_padding = 2
+container_padding = 1
+prompt_padding = 1
+
+[layout.widgets]
+time_position = "top"
+
+[secret]
+mode = "characters"
+characters = "*"
+
+[theme]
+# Gets converted to linux terminal-allowed colors
+text = "white"
+time = "white"
+container = "black"
+border = "yellow"
+greet = "white"
+prompt = "yellow"
+input = "white"
+action = "white"
+button = "yellow"
