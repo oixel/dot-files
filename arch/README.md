@@ -9,9 +9,10 @@ To ensure that fuzzel works correctly, place the scripts folder into `~/code/` o
 ## applications
 
 
-<u>official packages</u>
+*official packages*
 - **window manager** : [hyprland](https://archlinux.org/packages/extra/x86_64/hyprland/
 - **session manager** : [uwsm](https://archlinux.org/packages/extra/any/uwsm/)
+- **login manager**: [greetd](https://archlinux.org/packages/extra/x86_64/greetd/)
 - **terminal** : [ghostty](https://archlinux.org/packages/extra/x86_64/ghostty/)
 - **fuzzy finder / launcher** : [fuzzel](https://archlinux.org/packages/extra/x86_64/fuzzel/)
 - **screenshot** : [slurp](https://archlinux.org/packages/extra/x86_64/slurp/) (screenshot) + [swappy](https://archlinux.org/packages/extra/x86_64/swappy/) (screenshot editting / saving)
@@ -24,7 +25,8 @@ To ensure that fuzzel works correctly, place the scripts folder into `~/code/` o
 - **TUI art** : [arttime](https://github.com/poetaman/arttime) (displays custom boot up image in terminal)
 
 
-<u>AUR packages</u>
+*AUR packages*
+- **greeter** (updated fork of tuigreet for greetd): [tuigreet](https://github.com/NotAShelf/tuigreet)
 - **status bar / wallpaper** : [noctalia](https://github.com/noctalia-dev/noctalia)
 - **music player** : [subtui](https://github.com/MattiaPun/SubTUI) *(requires a subsonic server)*
 
