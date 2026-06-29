@@ -10,7 +10,7 @@ To ensure that fuzzel works correctly, place the scripts folder into `~/code/` o
 
 
 *official packages*
-- **window manager** : [hyprland](https://archlinux.org/packages/extra/x86_64/hyprland/
+- **window manager** : [hyprland](https://archlinux.org/packages/extra/x86_64/hyprland/)
 - **session manager** : [uwsm](https://archlinux.org/packages/extra/any/uwsm/)
 - **login manager**: [greetd](https://archlinux.org/packages/extra/x86_64/greetd/)
 - **terminal** : [ghostty](https://archlinux.org/packages/extra/x86_64/ghostty/)
