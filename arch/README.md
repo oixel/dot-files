@@ -32,15 +32,15 @@ To ensure that fuzzel works correctly, place the scripts folder into `~/code/` o
 
 ### required
 
-- xdg-desktop-portal
-- qt5-wayland
-- qt6-wayland
-- wl-clipboard (clipboard manager)
-- cliphist (clipboard history)
-- pipewire (managed through noctalia's UI)
-- networkmanager (managed through noctalia's UI)
-- polkit-agent (managed through noctalia's official polkit agent plugin)
-- bemoji (if you want the emoji picker functionality to work with fuzzel)
+- [xdg-desktop-portal](https://archlinux.org/packages/extra/x86_64/xdg-desktop-portal/)
+- [qt5-wayland](https://archlinux.org/packages/extra/x86_64/qt5-wayland/)
+- [qt6-wayland](https://archlinux.org/packages/extra/x86_64/qt6-wayland/)
+- [wl-clipboard](https://archlinux.org/packages/extra/x86_64/wl-clipboard/) (clipboard manager)
+- [cliphist](https://archlinux.org/packages/extra/x86_64/cliphist/) (clipboard history)
+- [pipewire](https://archlinux.org/packages/extra/x86_64/pipewire/) (managed through noctalia's UI)
+- [networkmanager](https://archlinux.org/packages/extra/x86_64/networkmanager/) (managed through noctalia's UI)
+- [polkit](https://archlinux.org/packages/extra/x86_64/polkit/) (managed through noctalia)
+- [bemoji](https://github.com/marty-oehme/bemoji) *(optional AUR package for if you want the emoji picker functionality to work with fuzzel)*
 
 \---
 
@@ -111,7 +111,7 @@ These are the steps to do so:
 
 1. Download a custom terminal font from [here](https://gist.github.com/AskinNet/10c8e131bf371dd5eab68e791040c995).
 2. Download the [forked version of tuigreet](https://github.com/NotAShelf/tuigreet) to allow for more control via a config file.
-3. Place the files in `/etc/tuigreet/` into your tuigreet directory.
+3. Place the files in [etc](https://github.com/oixel/dot-files/tree/main/arch%2Fetc) into your `/etc/` directory.
 4. Force the greetd service to call the custom color override on startup so that it can run with elevated priviledges:
 
 ```
